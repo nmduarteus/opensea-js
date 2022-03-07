@@ -1,6 +1,6 @@
 import { assert } from "chai";
 import { suite, test } from "mocha";
-import * as Web3 from "web3";
+import Web3 from "web3";
 import {
   MAINNET_PROVIDER_URL,
   NULL_ADDRESS,
@@ -58,7 +58,6 @@ suite("seaport: static calls", () => {
       startAmount: amountInToken,
       extraBountyBasisPoints: 0,
       buyerAddress: NULL_ADDRESS,
-      expirationTime: 0,
       quantity: 1,
       paymentTokenAddress: NULL_ADDRESS,
       waitForHighestBid: false,
@@ -97,7 +96,6 @@ suite("seaport: static calls", () => {
       startAmount: amountInToken,
       extraBountyBasisPoints: 0,
       buyerAddress: NULL_ADDRESS,
-      expirationTime: 0,
       quantity: 1,
       paymentTokenAddress: NULL_ADDRESS,
       waitForHighestBid: false,
@@ -132,7 +130,6 @@ suite("seaport: static calls", () => {
       startAmount: amountInToken,
       extraBountyBasisPoints: 0,
       buyerAddress: NULL_ADDRESS,
-      expirationTime: 0,
       quantity: 1,
       paymentTokenAddress: NULL_ADDRESS,
       waitForHighestBid: false,
